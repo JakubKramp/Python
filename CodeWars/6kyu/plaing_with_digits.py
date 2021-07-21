@@ -23,7 +23,7 @@ Note: n and p will always be given as strictly positive integers.
 def dig_pow(n, p):
     res = 0
     for i, k in enumerate(str(n), start=p):
-        res+=int(k)**i
-    if  res % n == 0:
+        res += int(k)**i
+    if res % n == 0:
         return int(res/n)
     return -1
